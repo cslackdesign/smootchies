@@ -9,9 +9,10 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+        <link rel="stylesheet" type="text/css" href="css/general.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -19,8 +20,35 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <!-- Header & Nav -->
+        <header>
+            <nav class="grid">
+                <ul class="nav-left unit unit-xs-1-2 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+                    <li><a href="index.html"><img src="http://placekitten.com/g/50/50" alt="Smootchie's Creations"></a></li>
+                    <li><a href="#">NAV1</a></li>
+                    <li><a href="#">NAV2</a></li>
+                </ul>
+                <ul class="nav-right unit unit-xs-1-2 unit-s-1-2 unit-m-1-2 unit-l-1-2">
+                    <li><a href="#"><button>Order Now</button></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Landing Area-->
+        <section class="landing">
+            <h1>Smootchie's Creations</h1>
+            <p class="sub">Cakes & Desserts handcrafted just for you.</p>
+            <a href="#"><button>Order Now</button></a>
+        </section>
+
+        <!-- Instagram Feed -->
+        <section class="instagram">
+            <h2>#smootchiescreations on instagram</h2>
+            <!-- INSTANSIVE WIDGET -->
+            <script src="http://instansive.com/widget/js/instansive.js"></script><iframe src="http://instansive.com/widgets/K621f3cf50952fdb57757bd37f0a835c.html" scrolling="no" allowtransparency="true" class="instansive-widget"></iframe>
+
+        </section>
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>

@@ -13,23 +13,63 @@
 body {
   margin:0;
   padding:0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 /*BUTTON STYLES*/
 
 button {
   border: 0;
-  padding:0.5rem;
+  padding:0.7rem;
   border-radius: 0.2rem;
+  background-color: #725090;
+  color: #fff;
 }
 
 /*HEADER*/
 
 header {
   padding: 10px;
+  position:fixed;
+  width: 100%;
+  top:0;
+  background-color: rgba(104,71,130,0.9);
+}
+
+.btn-yellow{
+  background-color: #ffd900;
+  color: #000;
+}
+
+h1, .sub{
+  margin:0 0 2rem 0;
+  padding:0;
+}
+
+@media only screen and (min-width:40em){
+  h1 {
+    font-size: 3rem;
+
+  }
+
+  .landing .sub {
+
+    font-weight: 300;
+    font-size: 2rem;
+  }
+
+  header {
+    padding: 15px;
+  }
 }
 
 /*NAV*/
+
+/*LOGO*/
+
+.logo {
+  width: 50px;
+}
 
 /*remove margin/padding*/
 ul, li {
@@ -48,16 +88,51 @@ nav a, li {
 }
 
 .nav-left a {
-  color: #000;
+  color: #fff;
   padding: 0 0.5rem 0 0;
   font-size:0.9rem;
+  font-weight: 300;
+
+}
+
+@media only screen and (min-width:40em){
+
+  .nav-left a {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+
+  .logo {
+    width: 100px;
+  }
 
 }
 
 /* SECTIONS */
 
+h2 {
+  font-weight: 600;
+}
+
+.sub {
+  font-weight: 300;
+  margin:0 0 4rem 0;
+  padding:0;
+}
+
+@media only screen and (min-width:40em){
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .sub {
+    font-size: 1.5rem;
+  }
+}
+
 section {
-  margin: 1rem 0 1rem 0;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 /* SECTION: LANDING */
@@ -69,24 +144,18 @@ section {
   background-position: center;
   text-align: center;
 
-  padding: 8rem 0 5rem 0;
+  padding: 12rem 0 5rem 0;
   margin-top: -5rem;
 
 }
 
 @media only screen and (min-width:40em){
   .landing {
-    height: 500px;
-    padding: 11rem 0 5rem 0;
+    height: 700px;
+    padding: 20rem 0 5rem 0;
   }
 }
 
-@media only screen and (min-width:50em){
-  .landing {
-    height: 600px;
-    padding: 14rem 0 5rem 0;
-  }
-}
 
 h1 {
   margin:0;
@@ -170,13 +239,23 @@ h3 {
   }
 }
 
+@media only screen and (min-width:45em){
+  .about-wrapper {
+    width: 600px;
+    display:block;
+    margin:0 auto;
+    padding: 3rem;
+  }
+}
+
 
 .about-image {
   border-radius: 100px;
 }
 
-.lowlight {
-  background-color: #333;
+.about{
+  background-image: url(../img/about-bg.jpg);
+  background-size: cover;
   color: #fff;
   padding: 1rem;
 }

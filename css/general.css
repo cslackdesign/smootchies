@@ -15,10 +15,17 @@ body {
   padding:0;
 }
 
+/*BUTTON STYLES*/
+
+button {
+  border: 0;
+  padding:0.5rem;
+  border-radius: 0.2rem;
+}
+
 /*HEADER*/
 
 header {
-  background-color: #ccc;
   padding: 10px;
 }
 
@@ -40,14 +47,45 @@ nav a, li {
   float:right;
 }
 
+.nav-left a {
+  color: #000;
+  padding: 0 0.5rem 0 0;
+  font-size:0.9rem;
+
+}
+
+/* SECTIONS */
+
+section {
+  margin: 1rem 0 1rem 0;
+}
+
 /* SECTION: LANDING */
 
 .landing {
-  background-image: url('http://placekitten.com/g/1000/1000');
+  background-image: url('../img/landing-bg.jpg');
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
   text-align: center;
 
+  padding: 8rem 0 5rem 0;
+  margin-top: -5rem;
+
+}
+
+@media only screen and (min-width:40em){
+  .landing {
+    height: 500px;
+    padding: 11rem 0 5rem 0;
+  }
+}
+
+@media only screen and (min-width:50em){
+  .landing {
+    height: 600px;
+    padding: 14rem 0 5rem 0;
+  }
 }
 
 h1 {
@@ -55,9 +93,99 @@ h1 {
   padding:0;
 }
 
+/* SECTION: INSTAGRAM */
+
+.instagram {
+  text-align: center;
+}
+
+.instansive-widget {
+  border:0;
+  width:80%;
+  margin:0 auto;
+  height: 300px;
+}
+
+@media only screen and (min-width:25em){
+  .instansive-widget {
+    height: 350px;
+  }
+
+}
+
+@media only screen and (min-width:35em){
+  .instansive-widget {
+    height: 500px;
+  }
+
+}
+
+@media only screen and (min-width:45em){
+  .instansive-widget {
+    height: 700px;
+  }
+
+}
 
 
+@media only screen and (min-width:55em){
+  .instansive-widget {
+    height: 800px;
+  }
 
+}
+
+@media only screen and (min-width:65em){
+  .instansive-widget {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width:75em){
+  .instansive-widget {
+    height: 1000px;
+  }
+}
+
+/* SECTION: ABOUT*/
+
+h3 {
+  margin:0;
+  padding:0;
+}
+
+@media only screen and (min-width:25em){
+  .about-wrapper {
+    width: 90%;
+    margin:0 auto;
+  }
+}
+
+@media only screen and (min-width:35em){
+  .about-wrapper {
+    width: 400px;
+    display:block;
+    margin:0 auto;
+    padding: 1rem;
+  }
+}
+
+
+.about-image {
+  border-radius: 100px;
+}
+
+.lowlight {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+/*SECTION: CTA FOOTER */
+
+.cta-footer {
+  text-align: center;
+}
 
 
 

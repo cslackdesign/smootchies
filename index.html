@@ -9,7 +9,6 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/grid.css">
@@ -18,6 +17,7 @@
 
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -32,14 +32,14 @@
                     <nav class="left-nav unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
                         <ul class="cl-effect-3">
                             <li><a href="#"><img class="logo" src="img/logo.png" alt="Smoochie's Creations"></a></li>
-                            <li><a href="#gallery">Gallery</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a data-scroll href="#gallery">Gallery</a></li>
+                            <li><a data-scroll href="#">About</a></li>
                             <li><a href="#">Blog</a></li>
                         </ul>
                     </nav>
                     <nav class="right-nav unit unit-xs-hidden unit-s-hidden unit-m-1-2 unit-l-1-2">
                         <ul>
-                            <li><a href="#"><button class="cta-nav">Order Now</button></a></li>
+                            <li><a data-scroll href="#order"><button class="cta-nav">Order Now</button></a></li>
                         </ul>
                     </nav>
                 </header>
@@ -47,7 +47,7 @@
                 <div class="landing-content">
                     <h1>Smoochie's Creations</h1>
                     <p class="sub">Custom treats made just for you</p>
-                    <a href="#"><button class="cta-landing">Order Now</button></a>
+                    <a data-scroll href="#order"><button class="cta-landing">Order Now</button></a>
                 </div>
 
             </div>
@@ -104,34 +104,41 @@
             </ul>
         </section>
 
-        <section class="contact">
-            <div id="form-wrapper" class="body-wrapper grid">
+        <section id="order" class="contact">
+            <div id="form-wrapper" class="body-wrapper">
+                <h2>Order the best cake you've ever had</h2>
 
-                <div id="inputs">
-                    <div class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
-                    SOCIAL
-                    </div>
-                    <form name="input" action="#" method="post">
-                        <div class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
+                <div id="inputs grid">
+                    <form name="input" action="MAILTO:cassie.slack@shopify.com" method="post" enctype="text/plain">
+                        <div class="imput-wrap unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
                             <p class="imput-p">Name</p>
                             <input class="text-imput" type="text" name="name" value="name"><br/>
                             <p class="imput-p">Email</p>
                             <input class="text-imput" type="email" name="email" value="e-mail address"><br/><br/>
                         </div>
-                        <div class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
+                        <div class="message-wrap unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
                             <p class="imput-p">What are you looking for?</p>
                             <textarea class="message" name="msg"></textarea>
-                            <a href="mailto:"><input class="submit" type="submit" value="Submit"></a>
+                        </div>
+                        <div class="submit-wrap unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+                            <input class="submit" type="submit" value="Order Now">
                         </div>
                     </form>
                 </div>
             </div>
         </section>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+        <a href="#" class="scrollToTop"><img src="img/up-arrow.svg" alt="Scroll to Top"></a>
+
+
+
+        <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/bind-polyfill.min.js"></script>
+        <script>
+            smoothScroll.init();
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

@@ -61,6 +61,8 @@ header {
 
 nav {
   height: 108px;
+  font-weight: lighter;
+  font-style: italic;
 }
 
 nav, ul, li {
@@ -86,7 +88,7 @@ nav li a {
 }
 
 .left-nav li{
-  padding-right: 15px;
+  padding-right: 30px;
 }
 
 /*-------------------------------------RIGHT NAV*/
@@ -116,6 +118,8 @@ h1 {
   font-size: 54px;
   margin:0;
   padding:0;
+
+  font-family: "pacifico", Helvetica, Arial, sans-serif;
 }
 
 .landing-content .sub {
@@ -134,8 +138,7 @@ h1 {
 /*---------------------------------------------------------------------TAGLINE*/
 
 h2 {
-  font-style: italic;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 .tagline-inner {
@@ -150,12 +153,65 @@ h2 {
 
 /*---------------------------------------------------------------------GALLERY*/
 
-.gallery-unit img {
+.gallery-unit img{
   width: 100%;
+  height:100%;
 }
 
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
+ul.img-list li {
+  height: 150px;
+  position: relative;
+  width: 150px;
+  margin: 3px auto;
+}
 
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+span.text-content {
+  background: rgba(69,54,73,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.price {
+  font-family: "pacifico", Helvetica, Arial,sans-serif;
+  font-size: 3rem;
+  margin:0;
+  padding:0;
+}
+
+@media only screen and (min-width: 25em){
+  span.text-content , ul.img-list li {
+    width: 400px;
+    height: 400px;
+  }
+}
 
 
 

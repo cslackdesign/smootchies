@@ -11,6 +11,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/grid.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -19,7 +21,33 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <section class="landing">
+            <div class="body-wrapper">
+
+                <header class="grid">
+                    <nav class="left-nav unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2">
+                        <ul>
+                            <li><a href="#"><img class="logo" src="img/logo.png" alt="Smoochie's Creations"></a></li>
+                            <li><a href="#">Nav 2</a></li>
+                            <li><a href="#">Nav 3</a></li>
+                            <li><a href="#">Nav 4</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="right-nav unit unit-xs-hidden unit-s-hidden unit-m-1-2 unit-l-1-2">
+                        <ul>
+                            <li><a href="#"><button class="cta-nav">Order Now</button></a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="landing-content">
+                    <h1>Smoochie's Creations</h1>
+                    <p class="sub">Custom treats made just for you</p>
+                    <a href="#"><button class="cta-landing">Order Now</button></a>
+                </div>
+
+            </div>
+        </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>

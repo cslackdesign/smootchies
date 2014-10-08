@@ -1,0 +1,153 @@
+body {
+  margin:0;
+  padding:0;
+
+  font-family: "Helvetica Neue", Helvetica, Arial,sans-serif;
+}
+
+/*----------------------------------------------------------------------BUTTON*/
+
+button {
+  border: 3px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 8.5px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+
+}
+
+/*-------------------------------------------------------------------BODY WRAP*/
+
+.body-wrapper {
+  width:95%;
+  height:100%;
+  margin:0 auto;
+  padding:0;
+  display:block;
+}
+
+@media only screen and (min-width:43.75em) {
+  .body-wrapper {
+  width:66.66%;
+  }
+}
+/*---------------------------------------------------------------------LANDING*/
+
+.landing {
+  background-image: url('../img/coffee-dessert.jpeg');
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (min-width:43.75em) {
+  .landing {
+  height:700px;
+  }
+}
+
+/*----------------------------------------------------------------------HEADER*/
+
+header {
+  width: 100%;
+  margin:0;
+  padding:8.5px;
+  height: 108px;
+}
+
+/*-------------------------------------------------------------------------NAV*/
+
+nav {
+  height: 108px;
+}
+
+nav, ul, li {
+  padding:0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+}
+
+nav li a {
+  text-decoration:none;
+  color: #fff;
+}
+
+/*--------------------------------------LEFT NAV*/
+
+/*LOGO*/
+
+.logo {
+  height:75px;
+}
+
+.left-nav li{
+  padding-right: 15px;
+}
+
+/*-------------------------------------RIGHT NAV*/
+
+.right-nav li {
+  float:right;
+  padding: 30px 0 30px;
+}
+
+/*---------------------------------------------------------------------LANDING*/
+
+.landing-content {
+  text-align:center;
+  color: #fff;
+  margin: 50px 0;
+}
+
+@media only screen and (min-width:43.75em) {
+  .landing-content {
+  height:700px;
+  margin: 125px 0;
+  height: 195px;
+  }
+}
+
+h1 {
+  font-size: 54px;
+  margin:0;
+  padding:0;
+}
+
+.landing-content .sub {
+  font-size: 21px;
+  font-weight: lighter;
+  margin:0;
+  padding:0;
+}
+
+.cta-landing {
+  font-size: 15px;
+  margin: 50px 0 0 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -37,9 +37,10 @@ button:hover {
 /*---------------------------------------------------------------------LANDING*/
 
 .landing {
-  background-image: url('../img/coffee-dessert.jpeg');
+  background-image: url('../img/coffee-dessert-2.jpeg');
   background-size:cover;
   background-attachment: fixed;
+  background-position: center;
 }
 
 @media only screen and (min-width:43.75em) {

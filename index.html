@@ -104,25 +104,25 @@
             </ul>
         </section>
 
-        <section class="Contact">
-        <div id="header"><h1>Contact Us!</h1></div>
-            <div id="wrapper">
+        <section class="contact">
+            <div id="form-wrapper" class="body-wrapper grid">
+
                 <div id="inputs">
+                    <div class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
+                    SOCIAL
+                    </div>
                     <form name="input" action="#" method="post">
-                        First name: <input type="text" name="firstname" value="first name"><br/>
-                        Last name: <input type="text" name="lastname" value="last name"><br/>
-                        E-mail: <input type="email" name="email" value="e-mail address"><br/><br/>
-                    </form>
-                </div>
-                <div>
-                    <form id="options">
-                        Message: <br/><textarea name="msg"></textarea><br/>
-                        <p>Sex:</p>
-                        <input type="radio" name="sex" value="male">Male
-                        <input type="radio" name="sex" value="female">Female<br/><br/>
-                        <input type="checkbox" name="notify" value="updates" checked>I'd like to receive notices when this website updates.<br/>
-                        <input type="checkbox" name="notify" value="services">I'd like to receive notices pertaining to related websites and their services.<br/><br/>
-                        <input type="submit" value="Submit">
+                        <div class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
+                            <p class="imput-p">Name</p>
+                            <input class="text-imput" type="text" name="name" value="name"><br/>
+                            <p class="imput-p">Email</p>
+                            <input class="text-imput" type="email" name="email" value="e-mail address"><br/><br/>
+                        </div>
+                        <div class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
+                            <p class="imput-p">What are you looking for?</p>
+                            <textarea class="message" name="msg"></textarea>
+                            <a href="mailto:"><input class="submit" type="submit" value="Submit"></a>
+                        </div>
                     </form>
                 </div>
             </div>

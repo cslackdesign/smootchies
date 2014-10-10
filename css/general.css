@@ -321,11 +321,54 @@ span.text-content {
   margin: 34px 0;
 }
 
+/*----------------------------------------------------------------------SOCIAL*/
+
+.social-media li{
+  display:inline-block;
+  list-style-type: none;
+  padding-right:15px;
+}
+
+.social-media a {
+  color: #c6b5d2;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #000;
+}
 
 
+/*---------------------------------------------------------------------DIVIDER*/
 
+.footer-divider {
+  background-image: url("../img/stawberry.jpg");
+  background-size:100%;
+  background-repeat: none;
+  height: 50px;
+  width: 100%;
+}
 
+/*----------------------------------------------------------------------FOOTER*/
 
+footer {
+  background-color: #c6b5d2;
+  margin:0;
+  padding: 17px;
+}
+
+footer li {
+  list-style-type: none;
+  display:inline-block;
+  padding-right: 17px;
+
+}
+
+footer a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
 
 
 
